@@ -1,0 +1,49 @@
+#include<bits/stdc++.h>
+#include <string.h>
+using namespace std;
+
+int main ()
+{
+
+
+	int n1, n2, n3, n4, h, m;
+
+	cin >> n1 >> n2 >> n3 >> n4;
+
+	if (n1 == n3 && n2 == n4)
+	{
+
+		h = 24;
+		m = 0;
+	}
+	else
+	{
+
+
+		if (n1 > n3)
+		{
+
+			h = 24 - n1 + n3;
+
+		}
+		if (n1 < n3)
+		{
+
+			h = n3 - n1;
+		}
+		if (n4 > n2)
+		{
+
+			m = n4 - n2;
+		}
+		if (n4 < n2)
+		{
+
+			m = 60 - n2 + n4;
+			h--;
+		}
+	}
+	printf("O JOGO DUROU %d HORA(S) E %d MINUTO(S)\n", h, m);
+
+
+}
