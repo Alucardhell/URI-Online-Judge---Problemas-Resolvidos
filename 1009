@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int main()
+{
+
+	char vendedor;
+	double slfixo, vendas;
+	scanf ("%s", &vendedor);
+	scanf ("%lf", &slfixo);
+	scanf ("%lf", &vendas);
+	printf ("TOTAL = R$ %.2lf\n", slfixo + vendas * 0.15);
+
+	return 0;
+}
