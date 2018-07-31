@@ -1,0 +1,25 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+	int N, h = 0, m = 0;
+
+	cin >> N;
+
+	while (N >= 3600)
+	{
+		h++;
+		N = N - 3600;
+	}
+	while (N >= 60)
+	{
+		m++;
+		N = N - 60;
+	}
+
+	printf ("%d:%d:%d\n", h, m, N);
+
+	return 0;
+
+
+}
