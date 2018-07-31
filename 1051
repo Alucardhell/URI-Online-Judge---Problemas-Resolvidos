@@ -1,0 +1,58 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+
+	double a, imposto, sobra;
+	imposto = 0;
+
+	cin >> a;
+
+	if (a <= 2000)
+	{
+
+		cout << "Isento\n";
+
+
+	}
+	else
+	{
+
+		sobra = a - 2000;
+
+		while (1)
+		{
+
+			if (sobra <= 1000)
+			{
+
+				imposto = imposto + ((8 * sobra) / 100);
+				break;
+
+			}
+			if (sobra > 1000 && sobra <= 2500)
+			{
+
+				sobra = sobra - 1000;
+				imposto = imposto + ((18.00 * sobra) / 100);
+				sobra = 1000;
+			}
+
+			if (sobra > 2500)
+			{
+
+				sobra = sobra - 2500;
+				imposto = imposto + ((28 * sobra) / 100);
+				sobra = 2500;
+
+			}
+
+
+		}
+
+		printf ("R$ %.2lf\n", imposto);
+
+	}
+
+
+}
