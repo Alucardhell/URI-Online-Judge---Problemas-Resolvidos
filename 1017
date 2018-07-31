@@ -1,0 +1,11 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+   	float h,k;
+   	cin >> h >> k;
+   	h = h*k;
+   	printf ("%.3f\n",h/12);
+    return 0;
+ 
+}
