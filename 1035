@@ -1,0 +1,42 @@
+#include<bits/stdc++.h>
+using namespace std;
+int main()
+{
+
+	int A, B, C, D;
+	bool aa = false, bb = false, cc = false, dd = false, f = false;
+	cin >> A >> B >> C >> D;
+
+	if (B > C && D > A)
+	{
+		aa = true;
+	}
+	if(C + D > A + B)
+	{
+		bb = true;
+	}
+	if (C > 0 && D > 0)
+	{
+		cc = true;
+	}
+	if (A % 2 == 0)
+	{
+		dd = true;
+	}
+	if (aa && bb && cc && dd)
+	{
+		f = true;
+	}
+	if (f == 1)
+	{
+		cout << "Valores aceitos" << endl;
+	}
+
+	else
+	{
+		cout << "Valores nao aceitos" << endl;
+	}
+
+	return 0;
+
+}
