@@ -1,0 +1,62 @@
+#include <iostream>
+using namespace std;
+
+
+int main ()
+{
+
+
+	string a, b, c;
+
+
+	cin >> a >> b >> c;
+
+	if (a.compare("vertebrado") == 0 && b.compare("ave") == 0 && c.compare("carnivoro") == 0) //x
+	{
+
+		cout << "aguia" << endl;
+	}
+
+	if (a.compare("vertebrado") == 0 && b.compare("ave") == 0 && c.compare("onivoro") == 0)
+	{
+
+		cout << "pomba" << endl;
+	}
+
+	if (a.compare("vertebrado") == 0 && b.compare("mamifero") == 0 && c.compare("onivoro") == 0)
+	{
+
+		cout << "homem" << endl;
+	}
+
+	if (a.compare("vertebrado") == 0 && b.compare("mamifero") == 0 && c.compare("herbivoro") == 0)
+	{
+
+		cout << "vaca" << endl;
+	}
+
+	if (a.compare("invertebrado") == 0 && b.compare("inseto") == 0 && c.compare("hematofago") == 0)
+	{
+
+		cout << "pulga" << endl;
+	}
+
+	if (a.compare("invertebrado") == 0 && b.compare("inseto") == 0 && c.compare("herbivoro") == 0)
+	{
+
+		cout << "lagarta" << endl;
+	}
+
+	if (a.compare("invertebrado") == 0 && b.compare("anelideo") == 0 && c.compare("hematofago") == 0)
+	{
+
+		cout << "sanguessuga" << endl;
+	}
+
+	if (a.compare("invertebrado") == 0 && b.compare("anelideo") == 0 && c.compare("onivoro") == 0)
+	{
+
+		cout << "minhoca" << endl;
+	}
+
+}
