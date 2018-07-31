@@ -1,0 +1,65 @@
+#include<bits/stdc++.h>
+#include <string.h>
+using namespace std;
+
+int main ()
+{
+
+
+	double A, B, C, vet[3];
+
+	cin >> A >> B >> C;
+
+	vet[0] = A;
+	vet[1] = B;
+	vet[2] = C;
+	sort (vet, vet + 3);
+	reverse(vet, vet + 3);
+	A = vet[0];
+	B = vet[1];
+	C = vet[2];
+
+	if (A >= B + C)
+	{
+
+		cout << "NAO FORMA TRIANGULO\n";
+
+	}
+	else
+	{
+		if (pow(A, 2) == pow(B, 2) + pow(C, 2))
+		{
+
+			cout << "TRIANGULO RETANGULO\n";
+
+		}
+		if (pow(A, 2) > pow(B, 2) + pow(C, 2))
+		{
+
+			cout << "TRIANGULO OBTUSANGULO\n";
+
+		}
+		if (pow(A, 2) < pow(B, 2) + pow(C, 2))
+		{
+
+			cout << "TRIANGULO ACUTANGULO\n";
+
+		}
+		if (A == B && A == C)
+		{
+
+			cout << "TRIANGULO EQUILATERO\n";
+
+		}
+		if (A == B && A != C || A == C && A != B || B == C && B != A)
+		{
+
+			cout << "TRIANGULO ISOSCELES\n";
+
+
+		}
+
+	}
+
+
+}
