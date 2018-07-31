@@ -1,0 +1,43 @@
+#include<bits/stdc++.h>
+#include <string.h>
+using namespace std;
+
+int main ()
+{
+
+
+	float n;
+
+	cin >> n ;
+
+	if (n > 0 && n <= 400.00)
+	{
+		printf ("Novo salario: %0.2f\nReajuste ganho: %0.2f\nEm percentual: 15 %%\n", ((n * 15) / 100) + n, (n * 15) / 100);
+
+	}
+	if (n > 400.01 && n <= 800.00)
+	{
+
+		printf ("Novo salario: %0.2f\nReajuste ganho: %0.2f\nEm percentual: 12 %%\n", ((n * 12) / 100) + n, (n * 12) / 100);
+	}
+
+	if (n > 800.00 && n <= 1200.00)
+	{
+
+		printf ("Novo salario: %0.2f\nReajuste ganho: %0.2f\nEm percentual: 10 %%\n", ((n * 10) / 100) + n, (n * 10) / 100);
+
+	}
+	if (n > 1200.00 && n <= 2000.00)
+	{
+
+		printf ("Novo salario: %0.2f\nReajuste ganho: %0.2f\nEm percentual: 7 %%\n", ((n * 7) / 100) + n, (n * 7) / 100);
+	}
+	if (n > 2000.00)
+	{
+
+		printf ("Novo salario: %0.2f\nReajuste ganho: %0.2f\nEm percentual: 4 %%\n", ((n * 4) / 100) + n, (n * 4) / 100);
+	}
+
+
+
+}
