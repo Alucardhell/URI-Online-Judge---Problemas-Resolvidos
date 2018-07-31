@@ -1,0 +1,66 @@
+#include <iostream>
+using namespace std;
+
+
+int main ()
+{
+
+
+	int n;
+	bool v = false;
+
+	cin >> n ;
+
+	if (n == 61)
+	{
+		v = true;
+		cout << "Brasilia" << endl;
+	}
+	if (n == 71)
+	{
+		v = true;
+		cout << "Salvador" << endl;
+	}
+
+	if (n == 11)
+	{
+		v = true;
+		cout << "Sao Paulo" << endl;
+	}
+
+	if (n == 21)
+	{
+		v = true;
+		cout << "Rio de Janeiro" << endl;
+	}
+
+	if (n == 32)
+	{
+		v = true;
+		cout << "Juiz de Fora" << endl;
+	}
+
+	if (n == 19)
+	{
+		v = true;
+		cout << "Campinas" << endl;
+
+	}
+	if (n == 27)
+	{
+		v = true;
+		cout << "Vitoria" << endl;
+	}
+
+	if (n == 31)
+	{
+		v = true;
+		cout << "Belo Horizonte" << endl;
+	}
+	if (v == false)
+	{
+		cout << "DDD nao cadastrado" << endl;
+	}
+
+
+}
