@@ -1,0 +1,24 @@
+#include <bits/stdc++.h>
+using namespace std;
+int main()
+{
+	int i, p = 0;
+	float x[6];
+
+	for (i = 0; i < 6; i++)
+	{
+
+		cin >> x[i];
+
+		if (x[i] > 0)
+		{
+
+			p++;
+
+		}
+
+	}
+
+	cout << p << " valores positivos" << endl;
+
+}
