@@ -1,0 +1,25 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main(int argc, char** argv)
+{
+	int i;
+	string zelda;
+
+	cin >> zelda;
+
+	for (i = 0; i < zelda.size(); i++)
+	{
+		if (zelda[i] >= 65 && zelda[i] <= 90)
+			zelda[i] = zelda[i] + 32;
+	}
+	size_t procura = zelda.find("zelda");
+	if (procura != std::string::npos)
+		cout << "Link Bolado\n";
+	else
+	{
+		cout << "Link Tranquilo\n";
+	}
+
+	return 0;
+}
