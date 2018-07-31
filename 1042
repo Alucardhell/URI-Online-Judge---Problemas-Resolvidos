@@ -1,0 +1,32 @@
+#include<bits/stdc++.h>
+#include <string.h>
+using namespace std;
+
+int main ()
+{
+
+
+	int n1[3], n2[3], i;
+
+	for (i = 0; i < 3; i++)
+	{
+		cin >> n1[i];
+		n2[i] = n1[i];
+	}
+
+	sort(n1, n1 + 3);
+
+	for (i = 0; i < 3; i++)
+	{
+		cout << n1[i];
+		cout << "\n";
+	}
+	cout << "\n";
+	for (i = 0; i < 3; i++)
+	{
+		cout << n2[i];
+		cout << "\n";
+	}
+
+}
+
