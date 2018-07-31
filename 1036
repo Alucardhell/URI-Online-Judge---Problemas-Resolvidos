@@ -1,0 +1,26 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main ()
+{
+
+	double A, B, C, po, r1, r2;
+
+	cin >> A >> B >> C;
+	po = (pow(B, 2) - (4 * A * C));
+	r1 = ((-B + sqrt(po)) / (2 * A));
+	r2 = (-B - sqrt(po)) / (2 * A);
+
+	if (po > 0 && A != 0)
+	{
+
+		printf ("R1 = %.5lf\nR2 = %.5lf\n", r1, r2);
+
+	}
+	else
+	{
+		printf ("Impossivel calcular\n");
+	}
+
+
+}
