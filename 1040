@@ -1,0 +1,54 @@
+#include<bits/stdc++.h>
+using namespace std;
+
+int main ()
+{
+
+
+	float n1, n2, n3, n4, media, notaex, mediaexame;
+
+	cin >> n1 >> n2 >> n3 >> n4;
+
+	media = ((n1 * 2) + (n2 * 3) + (n3 * 4) + (n4 * 1)) / 10;
+
+	printf ("Media: %0.1f\n", media);
+
+	if (media >= 7.0)
+	{
+
+		cout << "Aluno aprovado.\n";
+	}
+	if (media < 5.0)
+	{
+
+		cout << "Aluno reprovado.\n";
+	}
+	if (media >= 5.0 && media <= 6.9)
+	{
+
+		cout << "Aluno em exame.\n";
+		cin >> notaex;
+		printf ("Nota do exame: %0.1f\n", notaex);
+		mediaexame = (media + notaex) / 2;
+
+		if (mediaexame >= 5.0)
+		{
+
+			cout << "Aluno aprovado.\n";
+			printf ("Media final: %0.1f\n", mediaexame);
+
+		}
+		else
+		{
+			cout << "Aluno reprovado.\n";
+			printf ("Media final: %0.1f\n", mediaexame);
+
+
+		}
+
+	}
+
+
+
+
+}
